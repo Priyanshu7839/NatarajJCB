@@ -9,30 +9,31 @@ import React, { useEffect, useRef, useState } from "react";
 const DEMO_POSTS = [
   {
     id: "p1",
-    date: "July 11, 2012",
-    caption: "JCB बूम लिफ्ट के साथ गरबे की रौनक और भी रौशन होगी, पंखिड़ा की धुन खूब सजेगी! अधिक जानकारी के लिए कॉल करें 18001037386 या क्लिक करें :https://www.jcb.com/hi-in",
+    date: "Oct 10, 2025",
+    caption: "The JCB Stage 5 Backhoe Loader Range, built for outstanding performance and savings, setting new standards of success and profits in your business. Take full advantage of the auspicious festivals, book your JCB Stage 5 machine today",
     image:
-      "https://singleinterface-timeline-images.s3.ap-south-1.amazonaws.com/images/314657/fb_post_314657_2025_09_21_13_24_14_970338826334338_1203702245122519.jpg",
+      "https://scontent.fknu1-1.fna.fbcdn.net/v/t39.30808-6/559506332_1220838806742196_7989840770455558877_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cYTYA9Dfuj0Q7kNvwHeNN-5&_nc_oc=Admo3l1SMevhC4C31jBfeAjsZZICgynIxrcUCasn8Efv4AeGO488TytGBkRwckvTghtmfqpyRy4xrfiwCIcASq9u&_nc_zt=23&_nc_ht=scontent.fknu1-1.fna&_nc_gid=ayP_5LC8-WgOmjcY_aC2Ow&oh=00_AfdBe2qCGNNzKsbl9VMgAUgkUAieCSlv7Ll4uKYl_vjlxQ&oe=68ED9A3F",
     people: [{ name: "Jack", age: "1 year and 2 months" }],
     badge: "dot", // dot | star
   },
   {
     id: "p2",
-    date: "July 10, 2012",
-    caption: "माँ दुर्गा की शक्ति और आशीर्वाद के साथ इस नवरात्रि नई उम्मीदों और नई शुरुआत का स्वागत करें। JCB मशीन के मालिक बनें और आत्मनिर्भरता की ओर कदम बढ़ाएँ। अधिक जानकारी के लिए कॉल करें 18001037386 या क्लिक करें:",
+    date: "Oct 9, 2025",
+    caption: "JCB key unlocks a journey of growth.Congratulations to our newest customer — welcome to the Nataraj JCB family! Call on +91 7081 208 300 or +91 8573 029 392 to become a part of the Nataraj JCB family. ",
     image:
-      "https://singleinterface-timeline-images.s3.ap-south-1.amazonaws.com/images/314657/fb_post_314657_2025_09_20_13_30_14_970338826334338_1203036598522417.jpg",
+      "https://scontent.fknu1-5.fna.fbcdn.net/v/t39.30808-6/558865166_122274090086233230_5932757379316561311_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=BXXy4ErMREUQ7kNvwFpBoBJ&_nc_oc=AdkxBHRTJl90z0I2HW0tWmICMUKC1SWRRCYZ7CCrCPMQS6P44iqWEJG6p_HOLMm6JyKNoLyAgzOJh17DWzvhpODo&_nc_zt=23&_nc_ht=scontent.fknu1-5.fna&_nc_gid=fcNzMXX3YcfK2s7xCtKXUw&oh=00_AfcU7RYrKt_ousTJqct8kuE9_eWe0C4OWscL_DdGOGe_nQ&oe=68ED7DCC",
     people: [{ name: "Joe", age: "1 year and 2 months" }],
-    badge: "star",
+    badge: "dot",
   },
   {
     id: "p3",
-    date: "July 9, 2012",
-    caption: "This festive season, exchange your old machine, upgrade to a new JCB machine, and get an additional ₹1,50,000 bonus over & above the resale value. Hurry, offer valid till 30th September 2025. For more information, call 18001037386 or visit",
+    date: "Oct 7, 2025",
+    caption: "This Diwali, give new light to your business. Make every heavy task easy with JCB, and get explosive offers. For more information call +91 7081 208 300 / +91 8573 029",
     image:
-      "https://singleinterface-timeline-images.s3.ap-south-1.amazonaws.com/images/314657/fb_post_314657_2025_09_18_15_18_19_970338826334338_1201051655387578.jpg",
+      "https://scontent.fknu1-1.fna.fbcdn.net/v/t39.30808-6/557812879_122275086974233230_8587051006436084143_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dpE0v0pE4y0Q7kNvwHE5oGH&_nc_oc=Adnkh4x4X5Wdq3ZU-kr20134tt8BfxaCGnY0PAr2OY3Y1-xugm_BX9ED2jlkyK5S8v6fN0fUHykh8T60tMw9horo&_nc_zt=23&_nc_ht=scontent.fknu1-1.fna&_nc_gid=WLZ8xWHQGvtLrKOHjHI6Hg&oh=00_AfcMifrFXsVG0G8UJ0iXdGS0ECJkJN5-NFeluietUxxp8A&oe=68ED8CCC",
     people: [{ name: "john", age: "1 year and 2 months" }],
     badge: "dot",
+  
   },
 ];
 
@@ -130,14 +131,14 @@ const SocialTimeline = () => {
             <div className="sticky top-24">
               <div className="pr-2 text-right">
                 {/* People for the currently centered post */}
-                {currentPost?.people?.map((p, i) => (
+                {/* {currentPost?.people?.map((p, i) => (
                   <div key={`current-person-${i}`} className="mb-2">
                     <div className="text-sm font-medium text-slate-800">
                       {p.name}
                     </div>
                     <div className="text-xs text-slate-500">{p.age}</div>
                   </div>
-                ))}
+                ))} */}
                 {/* Date for the currently centered post */}
                 <div className="mt-4 text-xs text-slate-500">
                   {currentPost?.date}
@@ -173,7 +174,7 @@ const SocialTimeline = () => {
                     <img
                       src={post.image}
                       alt={post.caption}
-                      className="w-full max-h-[460px] object-cover"
+                      className="w-full max-h-[600px] object-fit"
                       loading="lazy"
                     />
                   )}
@@ -182,7 +183,7 @@ const SocialTimeline = () => {
                       {post.caption}
                     </p>
                     <div className="mt-3 flex items-center justify-between text-slate-500 text-sm">
-                      <div className="flex items-center gap-4">
+                      {/* <div className="flex items-center gap-4">
                         <button
                           className="hover:text-rose-600"
                           aria-label="Like"
@@ -199,7 +200,7 @@ const SocialTimeline = () => {
                             💬
                           </span>
                         </button>
-                      </div>
+                      </div> */}
                       {/* The card also shows its own date for clarity on mobile */}
                       <time className="text-xs">{post.date}</time>
                     </div>

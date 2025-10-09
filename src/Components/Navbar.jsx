@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Logo from '../assets/Logo.jpg'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -36,11 +37,11 @@ const Navbar = () => {
         {/* Brand */}
         <a href="#home" className="flex items-center gap-2">
           {/* Simple brand mark */}
-          <span className="inline-grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-tr from-amber-500 to-yellow-300 text-slate-900 font-extrabold shadow-sm">
-            N
+          <span className="inline-grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-tr from-amber-500 to-yellow-300 text-slate-900 font-extrabold shadow-sm overflow-hidden">
+            <img src={Logo} alt="" />
           </span>
           <span className="text-lg sm:text-xl font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600">
-            Natraj JCB
+            Nataraj Mobiles Pvt. Ltd.
           </span>
         </a>
 

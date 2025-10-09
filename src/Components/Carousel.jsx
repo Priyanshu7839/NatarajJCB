@@ -3,10 +3,7 @@ import Banner from '../assets/WebsiteBanner.jpg'
 
 // Polished default slides using existing assets
 const defaultSlides = [
-    { src: Banner, alt: "React logo", caption: "Heavy Backhoe loaders" },
-  { src: "/vite.svg", alt: "Vite logo", caption: "Lightning-fast tooling" },
-  { src: "/vite.svg", alt: "Vite logo", caption: "Modern DX" },
-  { src: Banner, alt: "React logo", caption: "Component-driven" },
+    { src: Banner, alt: "React logo", caption: "Festive Deals" }
 ];
 
 
@@ -109,7 +106,7 @@ const Carousel = ({
                 <img
                   src={slide.src}
                   alt={slide.alt ?? `Slide ${idx + 1}`}
-                  className="absolute inset-0 h-full w-full object-cover"
+                  className="absolute inset-0 h-full w-full object-fit"
                   draggable={false}
                   loading="lazy"
                 />

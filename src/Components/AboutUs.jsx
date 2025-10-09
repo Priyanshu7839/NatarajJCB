@@ -1,9 +1,6 @@
 import React from "react";
+import ContactImage from '../assets/ContactImage.png'
 
-// About Us page
-// - Centered container (max-w-7xl)
-// - Fully responsive with TailwindCSS
-// - Clean layout: intro, story, stats, values, and a simple CTA
 
 const AboutUs = () => {
   return (
@@ -115,7 +112,7 @@ const AboutUs = () => {
           <div>
             <div className="relative overflow-hidden rounded-xl shadow border border-slate-200">
               <img
-                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop"
+                src={ContactImage}
                 alt="Team collaborating at the workshop"
                 className="h-full w-full object-cover max-h-[520px]"
                 loading="lazy"

@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 
-// Contact Us page
-// - max-w-7xl centered container
-// - Fully responsive with TailwindCSS
-// - Left: contact form | Right: contact details + quick links
-
 const ContactUs = () => {
   const [form, setForm] = useState({
     name: "",
@@ -193,10 +188,11 @@ const ContactUs = () => {
               </div>
 
               <div className="space-y-4 text-sm">
-                <div>
+               <div className="flex justify-between">
+                 <div>
                   <p className="text-slate-500">Phone</p>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+9185730 29392"
                     className="mt-0.5 inline-block font-medium text-slate-900 hover:underline"
                   >
                    +91 85730 29392
@@ -204,12 +200,24 @@ const ContactUs = () => {
                   </a>
                 </div>
                 <div>
-                  <p className="text-slate-500">Whatsapp</p>
+                  <p className="text-slate-500">Phone</p>
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+919076608279"
                     className="mt-0.5 inline-block font-medium text-slate-900 hover:underline"
                   >
-                   +91 85730 29392
+                   +91 9076608279
+
+
+                  </a>
+                </div>
+               </div>
+               <div>
+                  <p className="text-slate-500">Email</p>
+                  <a
+                    
+                    className="mt-0.5 inline-block font-medium text-slate-900 hover:underline"
+                  >
+                   jcbsalesadmin@natarajmobiles.com
 
 
                   </a>
