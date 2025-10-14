@@ -6,6 +6,7 @@ import SocialTimeline from './Components/SocialTimeline'
 import AboutUs from './Components/AboutUs'
 import ContactUs from './Components/ContactUs'
 import Footer from './Components/Footer'
+import JcbDealers from './Components/JcbDealers'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Navbar/>
      <Carousel/>
      <FeaturedProducts/>
+     <JcbDealers/>
      <SocialTimeline/>
      <AboutUs/>
      <ContactUs/>
